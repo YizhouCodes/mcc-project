@@ -62,7 +62,7 @@ class ChangePasswordActivity : AppCompatActivity(),
         }
     }
 
-    fun changePassword(view: View) {
+    fun updatePassword(view: View) {
 
     }
 

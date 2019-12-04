@@ -46,7 +46,7 @@
             app:srcCompat="@drawable/controls" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/profileImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="60dp"
@@ -122,6 +122,19 @@
                 android:layout_weight="0.2"
                 app:srcCompat="@drawable/ic_home" />
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:clickable="true"
+            android:onClick="editPicture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/profileImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

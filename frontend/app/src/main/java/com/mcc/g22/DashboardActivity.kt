@@ -13,6 +13,8 @@ import com.google.android.material.navigation.NavigationView
 
 class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
+    var array = arrayOf("Daily Scrum Meeting","Personal Project")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
