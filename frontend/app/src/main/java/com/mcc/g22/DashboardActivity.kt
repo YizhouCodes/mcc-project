@@ -8,17 +8,22 @@ import android.view.View
 import androidx.core.view.GravityCompat.*
 import kotlinx.android.synthetic.main.activity_dashboard.*
 import android.view.MenuItem
+import android.widget.ArrayAdapter
 import com.google.android.material.navigation.NavigationView
 
 
 class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
-    var array = arrayOf("Daily Scrum Meeting","Personal Project")
+    //var array = arrayOf("Daily Scrum Meeting", "Personal Project")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
         nav_view.setNavigationItemSelectedListener(this)
+        /*val adapter = ArrayAdapter(this,
+            R.layout.project, array)
+
+        listView.setAdapter(adapter)*/
     }
 
     fun toggleDrawer(view: View){
